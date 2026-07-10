@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>계산기</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="calculator">
+      <section class="display" aria-live="polite" aria-label="계산 결과">
+        <div id="expression" class="expression">0</div>
+        <div id="result" class="result">0</div>
+      </section>
+
+      <section class="buttons" aria-label="계산기 버튼">
+        <button class="btn btn-ac" data-action="clear">AC</button>
+        <button class="btn btn-clear-entry" data-action="clear-entry">C</button>
+        <button class="btn btn-scientific" data-action="scientific" data-value="sqrt">√</button>
+        <button class="btn btn-operator" data-action="operator" data-value="/">÷</button>
+        <button class="btn btn-scientific" data-action="scientific" data-value="sin">sin</button>
+
+        <button class="btn btn-number" data-action="number" data-value="7">7</button>
+        <button class="btn btn-number" data-action="number" data-value="8">8</button>
+        <button class="btn btn-number" data-action="number" data-value="9">9</button>
+        <button class="btn btn-operator" data-action="operator" data-value="*">×</button>
+        <button class="btn btn-scientific" data-action="scientific" data-value="cos">cos</button>
+
+        <button class="btn btn-number" data-action="number" data-value="4">4</button>
+        <button class="btn btn-number" data-action="number" data-value="5">5</button>
+        <button class="btn btn-number" data-action="number" data-value="6">6</button>
+        <button class="btn btn-operator" data-action="operator" data-value="-">−</button>
+        <button class="btn btn-scientific" data-action="scientific" data-value="tan">tan</button>
+
+        <button class="btn btn-number" data-action="number" data-value="1">1</button>
+        <button class="btn btn-number" data-action="number" data-value="2">2</button>
+        <button class="btn btn-number" data-action="number" data-value="3">3</button>
+        <button class="btn btn-operator" data-action="operator" data-value="+">+</button>
+        <button class="btn btn-scientific" data-action="scientific" data-value="square">x²</button>
+
+        <button class="btn btn-number btn-zero" data-action="number" data-value="0">0</button>
+        <button class="btn btn-number" data-action="decimal" data-value=".">.</button>
+        <button class="btn btn-equals" data-action="calculate">=</button>
+        <button class="btn btn-scientific" data-action="scientific" data-value="pi">π</button>
+      </section>
+    </main>
+
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
